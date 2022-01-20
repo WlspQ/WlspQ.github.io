@@ -9,12 +9,10 @@
         <lastBuildDate>Thu, 20 Jan 2022 19:42:56 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">http://example.com/2022/01/20/%E8%A7%A3%E5%86%B3kali19%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
-            <title></title>
+            <title>解决kali 19中文乱码问题</title>
             <link>http://example.com/2022/01/20/%E8%A7%A3%E5%86%B3kali19%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
             <pubDate>Thu, 20 Jan 2022 19:42:56 +0800</pubDate>
-            <description><![CDATA[ &lt;hr&gt;
-&lt;h2 id=&#34;title解决kali-19中文乱码问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title解决kali-19中文乱码问题&#34;&gt;#&lt;/a&gt; title：解决 kali 19 中文乱码问题&lt;/h2&gt;
-&lt;p&gt;vim /etc/apt/sources.list&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;vim /etc/apt/sources.list&lt;/p&gt;
 &lt;h3 id=&#34;阿里云&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#阿里云&#34;&gt;#&lt;/a&gt; #阿里云&lt;/h3&gt;
 &lt;p&gt;deb &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21pcnJvcnMuYWxpeXVuLmNvbS9rYWxp&#34;&gt;http://mirrors.aliyun.com/kali&lt;/span&gt; kali-rolling main non-free contrib&lt;/p&gt;
 &lt;p&gt;deb-src &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21pcnJvcnMuYWxpeXVuLmNvbS9rYWxp&#34;&gt;http://mirrors.aliyun.com/kali&lt;/span&gt; kali-rolling main non-free contrib&lt;/p&gt;
