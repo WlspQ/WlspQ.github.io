@@ -3,7 +3,141 @@
     <id>http://example.com</id>
     <title>Hexo</title>
     <link href="http://example.com" />
-    <updated>2022-01-20T11:42:56.039Z</updated>
+    <updated>2022-01-20T14:14:44.892Z</updated>
+    <entry>
+        <id>http://example.com/2022/01/20/http%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/</id>
+        <title></title>
+        <link rel="alternate" href="http://example.com/2022/01/20/http%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/"/>
+        <content type="html">&lt;hr&gt;
+&lt;h2 id=&#34;title-http通信基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-http通信基础&#34;&gt;#&lt;/a&gt; title： HTTP 通信基础&lt;/h2&gt;
+&lt;h2 id=&#34;web介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web介绍&#34;&gt;#&lt;/a&gt; WEB 介绍&lt;/h2&gt;
+&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;p&gt;​        Web（World Wide Web）即全球广域网，也称为万维网，它是一种基于超文本和 HTTP 的、全球性的、动态交互的、跨平台的分布式图形信息系统。是建立在 Internet 上的一种网络服务，为浏览者在 Internet 上查找和浏览信息提供了图形化的、易于访问的直观界面，其中的文档及超级链接 Internet 上的信息节点组织成一个互为关联的网状结构。&lt;/p&gt;
+&lt;p&gt;​         简单来说，web 是 web 页面的载体，我们通过浏览器上网都是 Web。&lt;/p&gt;
+&lt;h3 id=&#34;通信介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#通信介绍&#34;&gt;#&lt;/a&gt; 通信介绍&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s3.bmp.ovh/imgs/2022/01/650ce7d686b6b5f0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;​              1：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS13d3ctMHYxZW42NXouYmFpZHUuY29t&#34;&gt;输入 www.baidu.com&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​               2：解析成 IP 地址：192.168.0.1&lt;/p&gt;
+&lt;p&gt;​               3：浏览器通过该 IP 访问 web 服务器获取 web 资源&lt;/p&gt;
+&lt;p&gt;​               4：再返回给客户端&lt;/p&gt;
+&lt;p&gt;​               5：最后呈现在用户面前&lt;/p&gt;
+&lt;h2 id=&#34;域名系统dns&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#域名系统dns&#34;&gt;#&lt;/a&gt; 域名系统 DNS&lt;/h2&gt;
+&lt;h3 id=&#34;简介-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介-2&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;p&gt;​        DNS 是一个简单的请求 - 响应协议，是将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。DNS 使用 TCP 和 UDP 协议的 53 端口。&lt;/p&gt;
+&lt;h3 id=&#34;请求与响应&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#请求与响应&#34;&gt;#&lt;/a&gt; 请求与响应&lt;/h3&gt;
+&lt;h4 id=&#34;dns记录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dns记录&#34;&gt;#&lt;/a&gt; DNS 记录&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A 记录&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;返回域名对应的 IPv4 地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;NS 记录&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;域名服务器&lt;/li&gt;
+&lt;li&gt;返回该域名由哪台域名服务器解析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PTR 记录&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;反向记录&lt;/li&gt;
+&lt;li&gt;从 IP 地址到域名的记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MX 记录&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;电子邮件交换记录&lt;/li&gt;
+&lt;li&gt;记录邮件域名对应的 IP 地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;响应码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#响应码&#34;&gt;#&lt;/a&gt; 响应码&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//NOERROR(无错误)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		No error condition&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		无错误条件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//FORMERR(格式错误)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		Format error - The name server was unable to interpret the query&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    格式错误 - 名称服务器无法解释查询&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//SERVFAIL(服务失败)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		Server failure - The name server was unable to process this query due to a problem with the name server&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		服务器故障 - 由于名称服务器出现问题，名称服务器无法处理此查询&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//NXDOMAIN&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		this code signifies that the domain name referenced in the query does not exist&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		此代码表示查询中引用的域名不存在&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//NOTIMP(未实现)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		Not Implemented - The name server does not support the requested kind of query&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		未实现 - 名称服务器不支持请求的查询类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//REFUSED(拒绝)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		Refused - The name server refuses to perform the specified operation for policy reasons&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		拒绝 - 名称服务器出于策略原因拒绝执行指定的操作&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;域名系统工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#域名系统工作原理&#34;&gt;#&lt;/a&gt; 域名系统工作原理&lt;/h3&gt;
+&lt;h4 id=&#34;解析过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解析过程&#34;&gt;#&lt;/a&gt; 解析过程&lt;/h4&gt;
+&lt;p&gt;DNS 解析过程是递归查询的，具体过程如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;用户要访问域名 www.example.com 时，先查看本机 hosts 是否有记录或者本机是否有 DNS 缓存，如果有，直接返回结果，否则向递归服务器查询该域名的 IP 地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;递归缓存为空时，首先向根服务器查询 com 顶级域的 IP 地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根服务器告知递归服务器 com 顶级域名服务器的 IP 地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;递归向 com 顶级域名服务器查询负责 example.com 的权威服务器的 IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;com 顶级域名服务器返回相应的 IP 地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;递归向 example.com 的权威服务器查询 www.example.com 的地址记录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;权威服务器告知 www.example.com 的地址记录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;递归服务器将查询结果返回客户端&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s3.bmp.ovh/imgs/2022/01/9440d7884886eb86.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;域传送&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#域传送&#34;&gt;#&lt;/a&gt; 域传送&lt;/h4&gt;
+&lt;p&gt;​       DNS 服务器可以分为主服务器、备份服务器和缓存服务器。域传送是指备份服务器从主服务器拷贝数据，并使用得到的数据更新自身数据库。域传送是在主备服务器之间同步数据库的机制。&lt;/p&gt;
+&lt;h3 id=&#34;服务器类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#服务器类型&#34;&gt;#&lt;/a&gt; 服务器类型&lt;/h3&gt;
+&lt;h4 id=&#34;根服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#根服务器&#34;&gt;#&lt;/a&gt; 根服务器&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;根服务器是 DNS 的核心，负责互联网顶级域名的解析，用于维护域的权威信息，并将 DNS 查询引导到相应的域名服务器。&lt;/li&gt;
+&lt;li&gt;根服务器在域名树中代表最顶级的 “.” 域， 一般省略。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;全球只有 13 台根服务器，13 台 IPv4 根服务器的域名标号为 a 到 m，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3huLS1hLXB4OGEucm9vdC1zZXJ2ZXJzLnhuLS1vcmdtLXNtOWYucm9vdC1zZXJ2ZXJzLm9yZw==&#34;&gt;即 a.root-servers.org 到 m.root-servers.org&lt;/span&gt;，所有服务器存储的数据相同，仅包含 ICANN (互联网名称与数字地址分配机构) 批准的 TLD (顶级域) 域名权威信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;权威服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#权威服务器&#34;&gt;#&lt;/a&gt; 权威服务器&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;权威服务器上存储域名 Zone 文件，ZONE 文件是 DNS 上保存域名配置的文件，维护域内域名的权威信息，递归服务器可以从权威服务器获得 DNS 查询的资源记录。&lt;/li&gt;
+&lt;li&gt;权威服务器需要在所承载的域名所属的 TLD 管理局注册，同一个权威服务器可以承载不同 TLD 域名，同一个域也可以有多个权威服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;递归服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#递归服务器&#34;&gt;#&lt;/a&gt; 递归服务器&lt;/h4&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;递归服务器负责接收用户的查询请求，进行递归查询并响应用户查询请求。在初始时递归服务器仅有记录了根域名的 Hint 文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>2022-01-20T14:14:44.892Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2022/01/20/%E8%A7%A3%E5%86%B3kali19%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</id>
         <title>解决kali 19中文乱码问题</title>
