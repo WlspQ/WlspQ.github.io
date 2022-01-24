@@ -5,8 +5,84 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 20 Jan 2022 22:14:44 +0800</pubDate>
-        <lastBuildDate>Thu, 20 Jan 2022 22:14:44 +0800</lastBuildDate>
+        <pubDate>Mon, 24 Jan 2022 09:36:08 +0800</pubDate>
+        <lastBuildDate>Mon, 24 Jan 2022 09:36:08 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/01/24/web%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/</guid>
+            <title>WEB站点搭建</title>
+            <link>http://example.com/2022/01/24/web%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/</link>
+            <pubDate>Mon, 24 Jan 2022 09:36:08 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;1网站-域名-空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1网站-域名-空间&#34;&gt;#&lt;/a&gt; 1：网站、域名、空间&lt;/h2&gt;
+&lt;h3 id=&#34;11简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11简介&#34;&gt;#&lt;/a&gt; 1.1：简介&lt;/h3&gt;
+&lt;p&gt;网站 (Website) 是指在因特网上根据一定的规则，使用 HTML（标准通用标记语言下的一个应用）等工具制作的用于展示特定内容相关网页的集合。简单地说，网站是一种沟通工具，人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务。&lt;/p&gt;
+&lt;h3 id=&#34;12网站的分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12网站的分类&#34;&gt;#&lt;/a&gt; 1.2：网站的分类&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;根据网站所用编程语言分类：例如 asp 网站、php 网站、jsp 网站、Asp. net 网站等；&lt;/li&gt;
+&lt;li&gt;根据网站的用途分类：例如门户网站（综合网站）、行业网站、娱乐网站等；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;根据网站的功能分类：例如单一网站（企业网站）、多功能网站（网络商城）等等。&lt;/li&gt;
+&lt;li&gt;根据网站的持有者分类：例如个人网站、商业网站、政府网站、教育网站等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;根据网站的商业目的分类：营利型网站（行业网站、论坛）、非营利性型网站（企业网站、政府网站、教育网站）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13域名简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13域名简介&#34;&gt;#&lt;/a&gt; 1.3：域名简介&lt;/h3&gt;
+&lt;p&gt;域名（英语：Domain Name），简称域名、网域，是由一串用点分隔的名字组成的 Internet 上某一台计算机或计算机组的名称，用于在数据传输时标识计算机的电子方位（有时也指地理位置）。&lt;/p&gt;
+&lt;p&gt;PS: 域名会被解析到一个唯一的公网 IP 地址上，当然通过 IP 也是可以去对网站进行访问。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/7IWUZ8&#34;&gt;&lt;img data-src=&#34;https://s4.ax1x.com/2022/01/24/7IWUZ8.png&#34; alt=&#34;7IWUZ8.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;14空间简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14空间简介&#34;&gt;#&lt;/a&gt; 1.4：空间简介&lt;/h3&gt;
+&lt;p&gt;常见网站空间：虚拟主机（虚拟空间），独立服务器，云主机，VPS。&lt;/p&gt;
+&lt;p&gt;虚拟主机：是在网络服务器上划分出一定的磁盘空间供用户放置站点、应用组件等；提供必要的站点功能、数据存放和传输功能。所谓虚拟主机，也叫 “网站空间”，就是把一台运行在互联网上的服务器划分成多个 “虚拟” 的服务器。每一个虚拟主机都具有独立的域名和完整的 Internet 服务器（支持 WWW、FTP、E-mail 等）功能。&lt;/p&gt;
+&lt;p&gt;云主机 /vps: 云主机又称为云计算服务器或云服务器，是云计算服务体系中的一项主机产品。云 z 主机是一种类似 VPS 服务器的虚拟化技术。也可以理解是 VPS 的升级版，与 VPS 还有所不同是，它是在一组集群服务器上划分出来的多个类似独立主机的部分。&lt;/p&gt;
+&lt;h2 id=&#34;2web容器-脚本-数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2web容器-脚本-数据库&#34;&gt;#&lt;/a&gt; 2：WEB 容器、脚本、数据库&lt;/h2&gt;
+&lt;h3 id=&#34;21web容器简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#21web容器简介&#34;&gt;#&lt;/a&gt; 2.1：WEB 容器简介&lt;/h3&gt;
+&lt;p&gt;web 容器就是一种服务程序，在服务器中一个端口就对应一个提供相应服务的程序（比如 Apache 默认的端口为 80），而这个程序就是处理服务器从客户端收到的请求，如 Java 中的 Tomcat 容器，ASP 的 IIS 都是这样的容器。一个服务器可以有多个容器。&lt;/p&gt;
+&lt;p&gt;常见的 WEB 容器：IIS、Apache、Nginx、Tomcat、Jboss、WebLogic&lt;/p&gt;
+&lt;h3 id=&#34;22脚本语言介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22脚本语言介绍&#34;&gt;#&lt;/a&gt; 2.2：脚本语言介绍&lt;/h3&gt;
+&lt;p&gt;脚本语言是一种 web 端的网页源代码。它又分为静态和动态网站。&lt;/p&gt;
+&lt;p&gt;静态：不与数据库发生交互，包括 html、html5、shtml。&lt;/p&gt;
+&lt;p&gt;动态：与数据库进行交互来获取、存储数据，包括 asp、aspx、php、jsp 等。&lt;/p&gt;
+&lt;h3 id=&#34;23数据库介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#23数据库介绍&#34;&gt;#&lt;/a&gt; 2.3：数据库介绍&lt;/h3&gt;
+&lt;p&gt;数据库是存放数据的仓库。它的存储空间很大，可以存放百万条、千万条、上亿条数据。但是数据库并不是随意地将数据进行存放，是有一定的规则的，否则查询的效率会很低。&lt;/p&gt;
+&lt;p&gt;常见的数据库：&lt;/p&gt;
+&lt;p&gt;Access 数据库：小型数据库，性能低，安全性低，无需登录账号密码。&lt;/p&gt;
+&lt;p&gt;Sqlserver 数据库：轻量级中小型，也叫 mssql 数据库，微软的数据库，需要登录账户密码，最高权限管理员名称：sa。&lt;/p&gt;
+&lt;p&gt;Mysql 数据库：轻量级，需要账户密码，被 Oracle 收购了，最高权限	管理员名称：root。&lt;/p&gt;
+&lt;p&gt;Oracle 数据库：属于甲骨文公司，大型数据库，一个数据库可以建立很多数据库，最高权限管理员名称： sys。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/7IW0iQ&#34;&gt;&lt;img data-src=&#34;https://s4.ax1x.com/2022/01/24/7IW0iQ.png&#34; alt=&#34;7IW0iQ.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3服务器简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3服务器简介&#34;&gt;#&lt;/a&gt; 3：服务器简介&lt;/h2&gt;
+&lt;h3 id=&#34;31简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#31简介&#34;&gt;#&lt;/a&gt; 3.1：简介&lt;/h3&gt;
+&lt;p&gt;服务器是一种高性能计算机，某方面其性能是普通计算机的几倍甚至更多，它作为网络节点，提供文件存储等服务，供客户端数据等服务，是互联网的灵魂。&lt;/p&gt;
+&lt;h3 id=&#34;32常见的服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#32常见的服务器&#34;&gt;#&lt;/a&gt; 3.2：常见的服务器：&lt;/h3&gt;
+&lt;p&gt;Windows：&lt;/p&gt;
+&lt;p&gt;Windows server2000&lt;/p&gt;
+&lt;p&gt;Windows server2003	IIS6.0&lt;/p&gt;
+&lt;p&gt;Windows server2008	IIS7.0/7.5&lt;/p&gt;
+&lt;p&gt;Windows server2012	IIS8.0&lt;/p&gt;
+&lt;p&gt;Windows server2016	IIS8.5&lt;/p&gt;
+&lt;p&gt;Windows10			IIS10.0&lt;/p&gt;
+&lt;p&gt;Linux：&lt;/p&gt;
+&lt;p&gt;Ubuntu&lt;/p&gt;
+&lt;p&gt;Red Hat Enterprise Linux (RHEL)&lt;/p&gt;
+&lt;p&gt;SUSE Linux Enterprise Server&lt;/p&gt;
+&lt;p&gt;CentOS (Community OS) Linux Server&lt;/p&gt;
+&lt;p&gt;Debian&lt;/p&gt;
+&lt;h3 id=&#34;33数据库-脚本与系统的关系&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#33数据库-脚本与系统的关系&#34;&gt;#&lt;/a&gt; 3.3：数据库、脚本与系统的关系&lt;/h3&gt;
+&lt;p&gt;​	i：标配&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/7IWcLV&#34;&gt;&lt;img data-src=&#34;https://s4.ax1x.com/2022/01/24/7IWcLV.png&#34; alt=&#34;7IWcLV.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ii：PS&lt;/p&gt;
+&lt;p&gt;​	数据库与脚本、系统 、并非绑定关系，只是出于性能而已的标配、另外还要注意 Windows 对大小写不敏感，而 Linux 对大小写敏感。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2022/01/20/http%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/</guid>
             <title>THHP通信基础</title>
