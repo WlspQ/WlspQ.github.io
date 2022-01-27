@@ -9,12 +9,10 @@
         <lastBuildDate>Mon, 24 Jan 2022 09:53:00 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">http://example.com/2022/01/24/Mysql%E8%AF%AD%E6%B3%95/</guid>
-            <title></title>
+            <title>Mysql语法</title>
             <link>http://example.com/2022/01/24/Mysql%E8%AF%AD%E6%B3%95/</link>
             <pubDate>Mon, 24 Jan 2022 09:53:00 +0800</pubDate>
-            <description><![CDATA[ &lt;hr&gt;
-&lt;h2 id=&#34;title-mysql语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#title-mysql语法&#34;&gt;#&lt;/a&gt; title： Mysql 语法&lt;/h2&gt;
-&lt;h2 id=&#34;知识框架&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#知识框架&#34;&gt;#&lt;/a&gt; 知识框架：&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;知识框架&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#知识框架&#34;&gt;#&lt;/a&gt; 知识框架：&lt;/h2&gt;
 &lt;p&gt;1：常见 SQL 语句&lt;/p&gt;
 &lt;p&gt;2：SQL 之增删改查&lt;/p&gt;
 &lt;p&gt;3：SQL 中 tips&lt;/p&gt;
