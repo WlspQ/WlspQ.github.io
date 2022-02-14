@@ -545,6 +545,7 @@
 &lt;p&gt;schemata 表：这里重点关注 schema_name 这个字段，它存放着所有数据库库名，在 SQL 注入中我们可以使用它来进行来查询所有数据库，然后进行高权限的跨库查询。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/7I5u6A&#34;&gt;&lt;img data-src=&#34;https://s4.ax1x.com/2022/01/24/7I5u6A.png&#34; alt=&#34;7I5u6A.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;tables 表：tables 表用来存储所有数据库里的表名等信息，其中 table_schema 列用来存放所有数据库的库名，table_name 用来存放 MySQL 数据库中的所有表名。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/7XoiDK&#34;&gt;&lt;img data-src=&#34;https://s4.ax1x.com/2022/01/27/7XoiDK.png&#34; alt=&#34;7XoiDK.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
