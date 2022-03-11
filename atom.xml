@@ -6,10 +6,9 @@
     <updated>2022-03-11T10:01:48.681Z</updated>
     <entry>
         <id>http://example.com/2022/03/11/DC-1/</id>
-        <title></title>
+        <title>DC-1 靶机</title>
         <link rel="alternate" href="http://example.com/2022/03/11/DC-1/"/>
-        <content type="html">&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Title: DC-1 靶机&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h4&gt;
+        <content type="html">&lt;h4 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h4&gt;
 &lt;p&gt;DC-1 靶机下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZml2ZTg2LmNvbS9kYy0xLmh0bWw=&#34;&gt;https://www.five86.com/dc-1.html&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;虚拟机网络链接模式：桥接模式&lt;/p&gt;
 &lt;p&gt;攻击机系统：kali linux 2021.1&lt;/p&gt;
