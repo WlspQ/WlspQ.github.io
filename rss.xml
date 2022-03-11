@@ -5,8 +5,71 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 23 Feb 2022 17:06:48 +0800</pubDate>
-        <lastBuildDate>Wed, 23 Feb 2022 17:06:48 +0800</lastBuildDate>
+        <pubDate>Fri, 11 Mar 2022 18:01:48 +0800</pubDate>
+        <lastBuildDate>Fri, 11 Mar 2022 18:01:48 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/03/11/DC-1/</guid>
+            <title></title>
+            <link>http://example.com/2022/03/11/DC-1/</link>
+            <pubDate>Fri, 11 Mar 2022 18:01:48 +0800</pubDate>
+            <description><![CDATA[ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;title:DC-1 靶机&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h4&gt;
+&lt;p&gt;DC-1 靶机下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZml2ZTg2LmNvbS9kYy0xLmh0bWw=&#34;&gt;https://www.five86.com/dc-1.html&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;虚拟机网络链接模式：桥接模式&lt;/p&gt;
+&lt;p&gt;攻击机系统：kali linux 2021.1&lt;/p&gt;
+&lt;h4 id=&#34;信息收集&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#信息收集&#34;&gt;#&lt;/a&gt; 信息收集&lt;/h4&gt;
+&lt;p&gt;1、使用 nmap 进行扫描&lt;/p&gt;
+&lt;p&gt;nmap -sP 192.168.1.0/24&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boEYqg&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boEYqg.png&#34; alt=&#34;boEYqg.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、直接进行详细扫描&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boEhJ1&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boEhJ1.png&#34; alt=&#34;boEhJ1.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3、访问该站点并查看 robots.txt 敏感文件&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boEoQK&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boEoQK.png&#34; alt=&#34;boEoQK.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boE7LD&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boE7LD.png&#34; alt=&#34;boE7LD.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4、依次访问 robots.txt 文件中的敏感文件目录信息，发现 UPGRADE.txt 文件爆露出版本号&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boELod&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boELod.png&#34; alt=&#34;boELod.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;漏洞利用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#漏洞利用&#34;&gt;#&lt;/a&gt; 漏洞利用&lt;/h4&gt;
+&lt;p&gt;1、寻找 drupal 7.X 版本漏洞，并进行利用&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boEzSP&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boEzSP.png&#34; alt=&#34;boEzSP.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、使用 MSF 搜索相关模块并进行利用&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Search drupal&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Use exploit/unix/webapp/drupal_drupalgeddon2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Set RHOST 192.168.0.109&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Run&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVeS0&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVeS0.png&#34; alt=&#34;boVeS0.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3、使用 python 反弹一个交互式 shell&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;python -c “import pty;pty.spawn(&amp;#x27;/bin/bash&amp;#x27;)”&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVQw4&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVQw4.png&#34; alt=&#34;boVQw4.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4、在网站根目录下发现 Flag1.txt 文件，查看提示寻找站点的配置文件&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boV8YR&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boV8YR.png&#34; alt=&#34;boV8YR.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;5、Drupal 的默认配置文件为 /var/www/sites/default/settings.php 并查看&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVYSx&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVYSx.png&#34; alt=&#34;boVYSx.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVUOO&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVUOO.png&#34; alt=&#34;boVUOO.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;6、根据配置文件提示找到 Flag2 并发现数据库连接账号密码，根据提示需要提升权限访问敏感文件或者进行爆破账户，在此现在已有信息数据库下手&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVDkd&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVDkd.png&#34; alt=&#34;boVDkd.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVrtA&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVrtA.png&#34; alt=&#34;boVrtA.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boV6pt&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boV6pt.png&#34; alt=&#34;boV6pt.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.nlark.com/yuque/0/2021/png/2699750/1622096334918-ab893980-55a0-41b0-8d57-907137cd938b.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;7、在此我们可以参考官方文档对 drupal 置换密码，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RydXBhbGNoaW5hLmNuL25vZGUvMjEyOA==&#34;&gt;参考链接&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;站点路径下执行：php scripts/password-hash.sh 新密码&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVg6f&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVg6f.png&#34; alt=&#34;boVg6f.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVWnS&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVWnS.png&#34; alt=&#34;boVWnS.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;8、登录网站，搜索发现 Flag3, 并根据提示需要进行 SUID 提权&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boV5kj&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boV5kj.png&#34; alt=&#34;boV5kj.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVohn&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVohn.png&#34; alt=&#34;boVohn.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;权限提升&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#权限提升&#34;&gt;#&lt;/a&gt; 权限提升&lt;/h4&gt;
+&lt;p&gt;1、根据提示 - exec，可能会是 SUID 提权，在此使用 find 命令查找 suid 权限的可执行二进制程序&lt;/p&gt;
+&lt;p&gt;find / -perm -4000 2&amp;gt;/dev/null&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boV7pq&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boV7pq.png&#34; alt=&#34;boV7pq.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2、对 find 命令进行测试并获取 root 权限（如遇问题访问：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JhaWR1XzM5MDg2NjM0L2FydGljbGUvZGV0YWlscy8xMDU0MjE1MjIlRUYlQkMlODk=&#34;&gt;https://blog.csdn.net/baidu_39086634/article/details/105421522）&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVbcV&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVbcV.png&#34; alt=&#34;boVbcV.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVqXT&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVqXT.png&#34; alt=&#34;boVqXT.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3、查找敏感文件 /etc/passwd 发现存在 Flag4 用户，并使用 hydra 进行爆破&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVOnU&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVOnU.png&#34; alt=&#34;boVOnU.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVXBF&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVXBF.png&#34; alt=&#34;boVXBF.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVj74&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVj74.png&#34; alt=&#34;boVj74.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4、回到 root 用户家目录发现 Flag5&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgtu.com/i/boVzN9&#34;&gt;&lt;img data-src=&#34;https://s1.ax1x.com/2022/03/11/boVzN9.png&#34; alt=&#34;boVzN9.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;good  good  good  !!!&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2022/02/23/hacknos-3/</guid>
             <title>Hacknos-3 靶机</title>
@@ -1358,9 +1421,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/01/20/daxian%201.2/</guid>
+            <guid isPermalink="true">http://example.com/2022/01/20/1.2/</guid>
             <title>计算机网络</title>
-            <link>http://example.com/2022/01/20/daxian%201.2/</link>
+            <link>http://example.com/2022/01/20/1.2/</link>
             <pubDate>Thu, 20 Jan 2022 19:12:21 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;一-osi七层参考模型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-osi七层参考模型&#34;&gt;#&lt;/a&gt; 一： OSI 七层参考模型&lt;/h1&gt;
 &lt;p&gt;计算机网络是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。&lt;/p&gt;
@@ -1647,9 +1710,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/01/20/daxian%201.1/</guid>
+            <guid isPermalink="true">http://example.com/2022/01/20/1.1/</guid>
             <title>计算机组成</title>
-            <link>http://example.com/2022/01/20/daxian%201.1/</link>
+            <link>http://example.com/2022/01/20/1.1/</link>
             <pubDate>Thu, 20 Jan 2022 19:12:18 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;一计算机组成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一计算机组成&#34;&gt;#&lt;/a&gt; 一。计算机组成&lt;/h1&gt;
 &lt;h2 id=&#34;1计算机组成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1计算机组成&#34;&gt;#&lt;/a&gt; 1. 计算机组成&lt;/h2&gt;
